@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background:#ffb6c1;
+}
+
+
+
+.carta {
+    width: 570px;
+    height: 570px;
+    background-image: url(cartinha\ fechada1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;  
+}
+.carta{
+    animation-name: pulse;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+
+
+.carta:hover{
+    background-image: url(cartinha\ aberta\ 1.png);
+    transform: translateY(-140px);
+
+} 
+
+@keyframes pulse {
+    0%{
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+
+    100%{
+        transform: scale(1);
+    }
+
+}
+
+
+
